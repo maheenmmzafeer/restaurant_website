@@ -23,7 +23,6 @@ Live demo: [demo-restaurant-website-demo.vercel.app](https://demo-restaurant-web
 - Gallery grid for visual browsing
 - Contact and reservation UI pages
 - Responsive layout and shared page shell
-- Portfolio-ready README screenshots
 
 ## Tech Stack
 
