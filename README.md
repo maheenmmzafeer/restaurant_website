@@ -1,63 +1,80 @@
-# Lasania Pakistan Restaurant Demo Website
+# Lasania Pakistan Restaurant Frontend Demo
 
-A modern multi-page restaurant frontend built with Next.js, React, TypeScript and Tailwind CSS.
+Front-end demo for a restaurant website prototype built with Next.js, React, TypeScript and Tailwind CSS. It presents a consistent multi-page restaurant experience with Home, Menu, About, Gallery, Contact and Reservations pages.
 
-Designed with a cinematic dark mountain café aesthetic, this project showcases a premium restaurant website experience with immersive visuals, responsive layouts and structured multi-page navigation.
+## Overview
 
----
+This repository showcases a rapid frontend prototyping approach for a restaurant-style website. The focus is on layout, visual consistency and responsive presentation rather than backend functionality.
+
+## Live Demo
+
+Live demo: [demo-restaurant-website-demo.vercel.app](https://demo-restaurant-website-demo.vercel.app/)
 
 ## Features
 
-- Multi-page restaurant website architecture
-- Modern responsive UI for desktop and mobile
-- Dark futuristic mountain café theme
-- Hero section with immersive background imagery
-- Dedicated pages for:
-  - Home
-  - Menu
-  - About
-  - Gallery
-  - Contact
-  - Reservations
-- Interactive menu card layouts
-- Image gallery with hover effects
-- Reservation form UI
-- Styled contact form and business details
-- Consistent reusable layout components
-
----
+- Multi-page public website structure
+- Consistent restaurant theme across all pages
+- Hero section with prominent call to action
+- Menu cards with image-led presentation
+- Gallery grid for visual browsing
+- Contact and reservation UI pages
+- Responsive layout and shared page shell
+- Portfolio-ready README screenshots
 
 ## Tech Stack
 
-- Next.js 16
+- Next.js
 - React
 - TypeScript
 - Tailwind CSS
 
----
+## Screenshots
+
+Place exported page screenshots in the [`screenshots`](./screenshots) folder.
+
+![Home](./screenshots/home.png)
+![Menu](./screenshots/menu.png)
+![About](./screenshots/about.png)
+![Gallery](./screenshots/gallery.png)
+![Contact](./screenshots/contact.png)
+![Reservations](./screenshots/reservations.png)
 
 ## Project Structure
 
-```bash
+```text
 app/
   about/
   contact/
   gallery/
   menu/
   reservations/
-  page.tsx
+  globals.css
   layout.tsx
+  page.tsx
 
 components/
   home/
-    Hero.tsx
-    FeaturedCategories.tsx
-    SignatureDishes.tsx
-    Testimonials.tsx
   layout/
-    Navbar.tsx
-    Footer.tsx
+    PageHeader.tsx
+    PageShell.tsx
 
-public/
-  images/
-  icons/
+screenshots/
+
+src/
+  data/
+    menu.ts
+```
+
+## Learning Focus
+
+- Building a small multi-page frontend from a shared design system
+- Structuring a Next.js app for portfolio presentation
+- Keeping UI copy and visuals truthful to the implementation
+- Improving spacing, alignment and responsive behavior without a full redesign
+
+## Future Improvements
+
+- Add a real booking flow if backend support is introduced
+- Replace remote image URLs with project assets
+- Add active navigation states and mobile navigation
+- Add form validation if the contact and reservation pages become functional
