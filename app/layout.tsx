@@ -13,9 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lasania Pakistan",
-  description: "Elevated dining above the clouds, where atmosphere and flavor meet.",
-  keywords: ["restaurant", "luxury dining", "Lasania", "mountain café", "Lasania Pakistan"],
+  title: "Lasania Pakistan | Restaurant Frontend Demo",
+  description:
+    "A restaurant website frontend demo built with Next.js, React, TypeScript and Tailwind CSS.",
+  keywords: [
+    "restaurant",
+    "frontend demo",
+    "Next.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "Lasania Pakistan",
+  ],
 };
 
 export default function RootLayout({
@@ -28,7 +36,9 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full bg-[#050B14] text-[#E6F1FF] antialiased">
+        {children}
+      </body>
     </html>
   );
 }

@@ -1,23 +1,23 @@
 const reviews = [
-  "Best futuristic dining experience I’ve ever had.",
+  "Best futuristic dining experience I've ever had.",
   "Feels like eating inside a sci-fi mountain resort.",
-  "Food + atmosphere = unreal combination.",
+  "Food and atmosphere create a striking combination.",
 ];
 
 export default function Testimonials() {
   return (
-    <section className="py-24 px-6 bg-[#050B14]">
-      <h2 className="text-center text-4xl font-bold text-cyan-300 mb-12">
+    <section className="bg-[#050B14] px-6 py-24">
+      <h2 className="mb-12 text-center text-3xl font-bold text-cyan-300 sm:text-4xl">
         What Visitors Say
       </h2>
 
-      <div className="mx-auto max-w-4xl grid gap-6">
+      <div className="mx-auto grid max-w-4xl gap-6">
         {reviews.map((text, i) => (
           <div
             key={i}
-            className="bg-[#0B1622] border border-cyan-500/10 p-6 rounded-2xl text-center"
+            className="rounded-2xl border border-cyan-500/10 bg-[#0B1622] p-6 text-center"
           >
-            <p className="text-gray-300 italic">“{text}”</p>
+            <p className="italic text-gray-300">"{text}"</p>
           </div>
         ))}
       </div>

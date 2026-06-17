@@ -1,34 +1,37 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import PageHeader from "@/components/layout/PageHeader";
+import PageShell from "@/components/layout/PageShell";
 
 export default function AboutPage() {
   return (
-    <>
-      <Navbar />
+    <PageShell mainClassName="px-6 py-28 sm:py-32">
+      <div className="mx-auto max-w-6xl space-y-12">
+        <PageHeader
+          eyebrow="About"
+          title="About Us"
+          description="A futuristic mountain cafe inspired dining experience where food, atmosphere and technology meet in one calm space."
+        />
 
-      <main className="min-h-screen bg-[#050B14] text-white px-6 py-32">
-        <div className="mx-auto max-w-6xl grid md:grid-cols-2 gap-12 items-center">
-
+        <div className="grid items-center gap-10 md:grid-cols-2">
           <img
             src="https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba"
-            className="rounded-2xl h-[420px] object-cover"
+            alt="Restaurant dining space"
+            loading="lazy"
+            className="h-[320px] rounded-2xl object-cover sm:h-[420px]"
           />
 
-          <div>
-            <h1 className="text-5xl font-bold text-cyan-300 mb-6">
-              About Us
-            </h1>
-
-            <p className="text-gray-300 leading-8">
-              A futuristic mountain café inspired dining experience where
-              food, atmosphere and technology merge into one calm space.
+          <div className="space-y-6 leading-8 text-gray-300">
+            <p>
+              This frontend demo focuses on a clean restaurant presentation with
+              a dark, atmospheric visual direction and simple multi-page
+              navigation.
+            </p>
+            <p>
+              The content stays intentionally minimal so the layout, spacing and
+              imagery remain easy to review in a portfolio setting.
             </p>
           </div>
-
         </div>
-      </main>
-
-      <Footer />
-    </>
+      </div>
+    </PageShell>
   );
 }

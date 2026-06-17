@@ -18,25 +18,27 @@ const dishes = [
 
 export default function SignatureDishes() {
   return (
-    <section className="py-24 px-6 bg-[#050B14]">
-      <h2 className="text-center text-4xl font-bold text-green-300 mb-12">
+    <section className="bg-[#050B14] px-6 py-24">
+      <h2 className="mb-12 text-center text-3xl font-bold text-green-300 sm:text-4xl">
         Signature Dishes
       </h2>
 
-      <div className="mx-auto max-w-6xl grid md:grid-cols-3 gap-6">
+      <div className="mx-auto grid max-w-6xl gap-6 md:grid-cols-3">
         {dishes.map((dish) => (
           <div
             key={dish.name}
-            className="bg-[#0B1622] border border-cyan-500/10 rounded-2xl overflow-hidden hover:scale-[1.03] transition"
+            className="overflow-hidden rounded-2xl border border-cyan-500/10 bg-[#0B1622] transition hover:scale-[1.03]"
           >
             <img
               src={dish.img}
+              alt={dish.name}
+              loading="lazy"
               className="h-48 w-full object-cover"
             />
 
             <div className="p-5">
               <h3 className="text-xl font-semibold">{dish.name}</h3>
-              <p className="text-gray-400 mt-2 text-sm">{dish.desc}</p>
+              <p className="mt-2 text-sm text-gray-400">{dish.desc}</p>
             </div>
           </div>
         ))}

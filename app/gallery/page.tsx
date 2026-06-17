@@ -1,35 +1,53 @@
-import Navbar from "@/components/layout/Navbar";
-import Footer from "@/components/layout/Footer";
+import PageHeader from "@/components/layout/PageHeader";
+import PageShell from "@/components/layout/PageShell";
 
 export default function GalleryPage() {
   return (
-    <>
-      <Navbar />
+    <PageShell mainClassName="px-6 py-28 sm:py-32">
+      <div className="mx-auto max-w-6xl space-y-12">
+        <PageHeader
+          eyebrow="Gallery"
+          title="Gallery"
+          description="Selected restaurant images used to support the visual direction of the demo."
+        />
 
-      <main className="min-h-screen bg-[#050B14] text-white px-6 py-32">
-        <h1 className="text-5xl text-cyan-300 text-center mb-12">
-          Gallery
-        </h1>
-
-        <div className="mx-auto max-w-6xl grid md:grid-cols-3 gap-5">
+        <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
           {[
-            "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
-            "https://images.unsplash.com/photo-1555396273-367ea4eb4db5",
-            "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
-            "https://images.unsplash.com/photo-1550547660-d9450f859349",
-            "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
-            "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba",
-          ].map((img, i) => (
+            {
+              src: "https://images.unsplash.com/photo-1504674900247-0877df9cc836",
+              alt: "Restaurant table setting",
+            },
+            {
+              src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5",
+              alt: "Dining room interior",
+            },
+            {
+              src: "https://images.unsplash.com/photo-1540189549336-e6e99c3679fe",
+              alt: "Chef prepared meal",
+            },
+            {
+              src: "https://images.unsplash.com/photo-1550547660-d9450f859349",
+              alt: "Fine dining dish",
+            },
+            {
+              src: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4",
+              alt: "Restaurant seating area",
+            },
+            {
+              src: "https://images.unsplash.com/photo-1529692236671-f1f6cf9683ba",
+              alt: "Warm dining space",
+            },
+          ].map((image) => (
             <img
-              key={i}
-              src={img}
-              className="h-64 w-full object-cover rounded-2xl border border-cyan-500/10 hover:scale-105 transition"
+              key={image.src}
+              src={image.src}
+              alt={image.alt}
+              loading="lazy"
+              className="h-64 w-full rounded-2xl border border-cyan-500/10 object-cover transition hover:scale-[1.03]"
             />
           ))}
         </div>
-      </main>
-
-      <Footer />
-    </>
+      </div>
+    </PageShell>
   );
 }
