@@ -1,15 +1,17 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Hero() {
   return (
-    <section
-      className="relative flex min-h-screen items-center justify-center px-6 pt-24 text-white"
-      style={{
-        backgroundImage: "url('/restaurant.png')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-      }}
-    >
+    <section className="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-24 text-white">
+      <Image
+        src="/restaurant.png"
+        alt="Restaurant interior"
+        fill
+        priority
+        className="object-cover object-center"
+      />
+
       <div className="absolute inset-0 bg-[#050B14]/70" />
 
       <div className="relative mx-auto max-w-3xl text-center">
