@@ -5,8 +5,7 @@ export default function Hero() {
     <section
       className="relative flex min-h-screen items-center justify-center px-6 pt-24 text-white"
       style={{
-        backgroundImage:
-          "url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5')",
+        backgroundImage: "url('/restaurant.png')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
