@@ -34,7 +34,7 @@ Live demo: [demo-restaurant-website-demo.vercel.app](https://demo-restaurant-web
 
 ## Screenshots
 
-Place exported page screenshots in the [`screenshots`](./screenshots) folder.
+Page screenshots are placed in the [`screenshots`](./screenshots) folder.
 
 | Page | Screenshot |
 | --- | --- |
