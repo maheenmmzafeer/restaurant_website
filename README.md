@@ -1,10 +1,14 @@
 # Lasania Pakistan Restaurant Frontend Demo
 
-Front-end demo for a restaurant website prototype built with Next.js, React, TypeScript and Tailwind CSS. It presents a consistent multi-page restaurant experience with Home, Menu, About, Gallery, Contact and Reservations pages.
+Front-end demo for a restaurant website prototype built with Next.js, React, TypeScript and Tailwind CSS.
+
+It presents a consistent multi-page restaurant experience with Home, Menu, About, Gallery, Contact and Reservations pages.
 
 ## Overview
 
-This repository showcases a rapid frontend prototyping approach for a restaurant-style website. The focus is on layout, visual consistency and responsive presentation rather than backend functionality.
+This repository showcases a rapid frontend prototyping approach for a restaurant-style website.
+
+The focus is on layout, visual consistency and responsive presentation rather than backend functionality.
 
 ## Live Demo
 
@@ -32,12 +36,14 @@ Live demo: [demo-restaurant-website-demo.vercel.app](https://demo-restaurant-web
 
 Place exported page screenshots in the [`screenshots`](./screenshots) folder.
 
-![Home](./screenshots/home.png)
-![Menu](./screenshots/menu.png)
-![About](./screenshots/about.png)
-![Gallery](./screenshots/gallery.png)
-![Contact](./screenshots/contact.png)
-![Reservations](./screenshots/reservations.png)
+| Page | Screenshot |
+| --- | --- |
+| Home | ![Home](./screenshots/home.png) |
+| Menu | ![Menu](./screenshots/menu.png) |
+| About | ![About](./screenshots/about.png) |
+| Gallery | ![Gallery](./screenshots/gallery.png) |
+| Contact | ![Contact](./screenshots/contact.png) |
+| Reservations | ![Reservations](./screenshots/reservations.png) |
 
 ## Project Structure
 
